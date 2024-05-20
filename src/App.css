@@ -1,42 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.wrapper{ max-width: 1200px; margin: 0 auto; }
+
+
+.main-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 260px));
+    grid-template-rows: repeat(6, 180px);
+    grid-template-areas:
+        "item1 item1 item1 item1"
+        "item2 item3 item3 item3"
+        "item2 item3 item3 item3"
+        "item2 item3 item3 item3"
+        "item2 item3 item3 item3"
+        "item4 item4 item4 item4";
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.header-grid{ grid-area: item1; }
+.sidebar-grid{ grid-area: item2; }
+.pages-grid{ grid-area: item3; }
+.footer-grid{ grid-area: item4; }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.box-item{
+    border: #1b1b1b 1px solid;
+    border-radius: 20px;
+    background-color: #e35f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
