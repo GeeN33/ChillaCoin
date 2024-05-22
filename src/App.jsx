@@ -11,7 +11,7 @@ function App() {
 
               <div className="box-item header-grid">header-grid</div>
               <div className="box-item sidebar-grid">sidebar-grid</div>
-              <div className="box-item pages-grid">
+              <div className="box-pages pages-grid">
                   <Portfolio />
               </div>
               <div className="box-item footer-grid">footer-grid</div>

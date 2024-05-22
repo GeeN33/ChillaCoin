@@ -1,17 +1,16 @@
-import { useState } from 'react'
-
 import style from './style.module.css'
+import Canvas from "../../components/canvas/Canvas.jsx";
 
 function Portfolio() {
-    const [count, setCount] = useState(0)
 
     return (
 
-        <div>
-
-            <div className={style.pages}>pages-grid</div>
-
-        </div>
+        <>
+            <div className={style.item1}>
+               <Canvas />
+            </div>
+            <div className={style.item2}>pages-grid2</div>
+        </>
 
     )
 }
