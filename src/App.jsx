@@ -1,22 +1,19 @@
 import './App.css'
-
+import { Layout } from 'antd';
+import AppHeader from "./components/Layout/AppHeader.jsx";
+import AppSider from "./components/Layout/AppSider.jsx";
+import AppContent from "./components/Layout/AppContent.jsx";
 
 function App() {
 
   return (
-
-      <div className="wrapper">
-
-          <div className="main-grid">
-
-              <div className="box-item header-grid">header-grid</div>
-              <div className="box-item sidebar-grid">sidebar-grid</div>
-              <div className="box-pages pages-grid">
-              </div>
-              <div className="box-item footer-grid">footer-grid</div>
-
-          </div>
-      </div>
+      <Layout>
+          <AppHeader />
+          <Layout>
+               <AppSider />
+               <AppContent />
+          </Layout>
+      </Layout>
   )
 }
 
