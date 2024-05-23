@@ -1,5 +1,5 @@
 import './App.css'
-import Portfolio from "./pages/portfolio/Portfolio.jsx";
+
 
 function App() {
 
@@ -12,7 +12,6 @@ function App() {
               <div className="box-item header-grid">header-grid</div>
               <div className="box-item sidebar-grid">sidebar-grid</div>
               <div className="box-pages pages-grid">
-                  <Portfolio />
               </div>
               <div className="box-item footer-grid">footer-grid</div>
 
