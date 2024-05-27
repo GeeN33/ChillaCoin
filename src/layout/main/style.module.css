@@ -1,0 +1,45 @@
+.wrapper{ max-width: 1500px; margin: 0 auto; }
+
+.main_grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, minmax(110px, 160px));
+    grid-template-rows: repeat(10, 90px);
+    grid-template-areas:
+        "item1 item1 item1 item1 item1 item1"
+        "item2 item2 item2 item2 item2 item2"
+        "item2 item2 item2 item2 item2 item2"
+        "item3 item3 item3 item3 item3 item3"
+        "item3 item3 item3 item3 item3 item3"
+        "item3 item3 item3 item3 item3 item3"
+        "item3 item3 item3 item3 item3 item3"
+        "item3 item3 item3 item3 item3 item3"
+        "item4 item4 item4 item4 item4 item4"
+        "item4 item4 item4 item4 item4 item4";
+
+}
+
+.nav_grid{ grid-area: item1; }
+.header_grid{ grid-area: item2; }
+.pages_grid{ grid-area: item3; }
+.footer_grid{ grid-area: item4; }
+
+.box_item{
+    border: #1b1b1b 1px solid;
+    border-radius: 10px;
+    background-color: #e35f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_pages{
+    border: #1b1b1b 1px solid;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
