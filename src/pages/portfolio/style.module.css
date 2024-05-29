@@ -8,12 +8,21 @@
         "item1 item1 item1 item1 item1 item1"
         "item1 item1 item1 item1 item1 item1"
         "item2 item2 item2 item2 item2 item2"
-        "item2 item2 item2 item2 item2 item2"
         "item2 item2 item2 item2 item2 item2";
 }
 
 .header_grid{ grid-area: item1; }
 .footer_grid{ grid-area: item2; }
+
+.box_header{
+    border: #1b1b1b 1px solid;
+    border-radius: 10px;
+    background-color: #e3d15f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
 
 .box_item{
     border: #1b1b1b 1px solid;

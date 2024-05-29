@@ -1,4 +1,5 @@
 import { cryptoAssets, cryptoData } from './data'
+import axios   from "axios";
 
 export function fakeFetchCrypto() {
   return new Promise((resolve) => {
@@ -15,3 +16,19 @@ export function fetchAssets() {
     }, 2000)
   })
 }
+
+export const fetchPortfolio = async () =>{
+  try {
+
+    var resposne = await axios.get("https://api.chillacoin.ru/portfolios?format=json")
+
+    return resposne.data
+
+  }
+  catch (error) {
+
+    console.error(error)
+
+  }
+
+};
